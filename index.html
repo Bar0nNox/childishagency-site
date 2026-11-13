@@ -1,57 +1,71 @@
 <!DOCTYPE html>
-<!-- © 2026 Alexandre Vial — Childish Agency. Tous droits réservés. v1.0.0 -->
-<!-- owner: alexandre-vial / childish-site / 1.0.0 / 7c1d4e9a2b -->
+<!-- © 2026 Alexandre Vial — Childish Agency. Tous droits réservés. v2.0.0 -->
+<!-- owner: alexandre-vial / childish-site / 2.0.0 / 7c1d4e9a2b -->
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Childish Agency — Monaco</title>
-  <meta name="description" content="Childish Agency, Monaco : production et organisation d'événements, mise en relation artistique, édition de logiciels et conseil en organisation.">
+  <title>Childish Agency — agence événementielle à Monaco</title>
+  <meta name="description" content="Childish Agency, Monaco : production d'événements, artistes et DJ, et outils sur mesure pour organiser une activité.">
   <meta name="author" content="Alexandre Vial">
+  <meta name="theme-color" content="#13294b">
+  <link rel="preload" href="fonts/shrikhand-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a class="brand" href="/">CHILDISH AGENCY</a>
-      <nav>
-        <a href="/" aria-current="page">Accueil</a>
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="confidentialite.html">Confidentialité</a>
-      </nav>
-    </div>
+  <div class="awning" aria-hidden="true"></div>
+
+  <header class="wrap site-head">
+    <span></span>
+    <nav aria-label="Navigation principale">
+      <a href="#activites">Activités</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <div class="wrap">
-      <h1>Événements, artistes et outils sur mesure, depuis Monaco.</h1>
-      <p class="lead">Childish Agency est une entreprise monégasque immatriculée au Répertoire du Commerce et de l'Industrie de Monaco.</p>
+    <section class="wrap hero">
+      <h1 class="wordmark">Childish<span class="sub">Agency, Monaco</span></h1>
+      <p>On produit des soirées, des brunchs et des événements privés, on trouve les artistes qui vont avec, et on construit les outils pour que tout tourne sans accroc.</p>
+      <a class="button" href="mailto:contact@childish-agency.com">Écrire à l'agence</a>
+    </section>
 
-      <div class="cards">
-        <div class="card">
+    <section class="activities" id="activites" aria-labelledby="activites-titre">
+      <div class="wrap">
+        <h2 id="activites-titre">Ce que fait l'agence</h2>
+
+        <article class="activity">
           <h3>Événements</h3>
-          <p>Conception, production, organisation et promotion d'animations, d'événements et de manifestations.</p>
-        </div>
-        <div class="card">
-          <h3>Artistes</h3>
-          <p>Agent d'événements artistiques et mise en relation entre artistes, prestataires et organisateurs.</p>
-        </div>
-        <div class="card">
-          <h3>Logiciels et organisation</h3>
-          <p>Édition de logiciels et conseil en organisation et paramétrage des processus des entreprises.</p>
-        </div>
-      </div>
+          <p>Conception, production et organisation de soirées, d'animations et de manifestations, de l'idée au démontage. Matériel, prestataires et logistique sont réunis sous un seul interlocuteur.</p>
+        </article>
 
-      <h2>Contact</h2>
-      <p><a href="mailto:contact@childish-agency.com">contact@childish-agency.com</a></p>
-    </div>
+        <article class="activity">
+          <h3>Artistes et DJ</h3>
+          <p>Recherche et réservation d'artistes et de DJ, mise en relation avec les lieux et les organisateurs, négociation et suivi des contrats.</p>
+        </article>
+
+        <article class="activity">
+          <h3>Outils et organisation</h3>
+          <p>Édition de logiciels et conseil en organisation : mise à plat des processus, paramétrage des outils et automatisation des tâches répétitives.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap contact" id="contact" aria-labelledby="contact-titre">
+      <div class="contact-panel">
+        <h2 id="contact-titre">Un projet, une date, une question</h2>
+        <a href="mailto:contact@childish-agency.com">contact@childish-agency.com</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-foot">
     <div class="wrap">
-      © 2026 Childish Agency — Alexandre Vial · Monaco ·
-      <a href="mentions-legales.html">Mentions légales</a> ·
-      <a href="confidentialite.html">Politique de confidentialité</a>
+      <p>© 2026 Childish Agency, Monaco</p>
+      <nav aria-label="Informations légales">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </nav>
     </div>
   </footer>
 </body>
