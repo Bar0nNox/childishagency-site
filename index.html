@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- © 2026 Alexandre Vial — Childish Agency. Tous droits réservés. v2.0.0 -->
-<!-- owner: alexandre-vial / childish-site / 2.0.0 / 7c1d4e9a2b -->
+<!-- © 2026 Alexandre Vial — Childish Agency. Tous droits réservés. v3.0.0 -->
+<!-- owner: alexandre-vial / childish-site / 3.0.0 / 7c1d4e9a2b -->
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -8,59 +8,59 @@
   <title>Childish Agency — agence événementielle à Monaco</title>
   <meta name="description" content="Childish Agency, Monaco : production d'événements, artistes et DJ, et outils sur mesure pour organiser une activité.">
   <meta name="author" content="Alexandre Vial">
-  <meta name="theme-color" content="#13294b">
-  <link rel="preload" href="fonts/shrikhand-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="theme-color" content="#e4670d">
+  <link rel="preload" href="fonts/grandstander-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="awning" aria-hidden="true"></div>
+  <div class="hero-band">
+    <header class="wrap site-head">
+      <span></span>
+      <nav aria-label="Navigation principale">
+        <a href="#activites">Activités</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <header class="wrap site-head">
-    <span></span>
-    <nav aria-label="Navigation principale">
-      <a href="#activites">Activités</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
     <section class="wrap hero">
-      <h1 class="wordmark">Childish<span class="sub">Agency, Monaco</span></h1>
-      <p>On produit des soirées, des brunchs et des événements privés, on trouve les artistes qui vont avec, et on construit les outils pour que tout tourne sans accroc.</p>
+      <h1><span class="wordmark">Childish</span></h1>
+      <p>Agence événementielle à Monaco. On produit des soirées, des brunchs et des événements privés, on trouve les artistes qui vont avec, et on construit les outils pour que tout tourne sans accroc.</p>
       <a class="button" href="mailto:contact@childish-agency.com">Écrire à l'agence</a>
     </section>
+  </div>
 
-    <section class="activities" id="activites" aria-labelledby="activites-titre">
-      <div class="wrap">
-        <h2 id="activites-titre">Ce que fait l'agence</h2>
-
-        <article class="activity">
+  <main>
+    <section class="wrap activities" id="activites" aria-labelledby="activites-titre">
+      <h2 class="section-title" id="activites-titre">Ce qu'on fait</h2>
+      <ul class="cards">
+        <li class="card card--orange">
           <h3>Événements</h3>
-          <p>Conception, production et organisation de soirées, d'animations et de manifestations, de l'idée au démontage. Matériel, prestataires et logistique sont réunis sous un seul interlocuteur.</p>
-        </article>
-
-        <article class="activity">
+          <p>Conception, production et organisation de soirées, d'animations et de manifestations, de l'idée au démontage. Matériel, prestataires et logistique réunis sous un seul interlocuteur.</p>
+        </li>
+        <li class="card card--rose">
           <h3>Artistes et DJ</h3>
           <p>Recherche et réservation d'artistes et de DJ, mise en relation avec les lieux et les organisateurs, négociation et suivi des contrats.</p>
-        </article>
-
-        <article class="activity">
+        </li>
+        <li class="card card--blue">
           <h3>Outils et organisation</h3>
           <p>Édition de logiciels et conseil en organisation : mise à plat des processus, paramétrage des outils et automatisation des tâches répétitives.</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </section>
 
-    <section class="wrap contact" id="contact" aria-labelledby="contact-titre">
-      <div class="contact-panel">
-        <h2 id="contact-titre">Un projet, une date, une question</h2>
-        <a href="mailto:contact@childish-agency.com">contact@childish-agency.com</a>
-      </div>
-    </section>
+    <div class="contact-band">
+      <section class="wrap contact" id="contact" aria-labelledby="contact-titre">
+        <h2 id="contact-titre">Un projet en tête ?</h2>
+        <p>Une date, un lieu, une envie : racontez-nous, on s'occupe du reste.</p>
+        <a class="button" href="mailto:contact@childish-agency.com">Écrire à l'agence</a>
+        <a class="address" href="mailto:contact@childish-agency.com">contact@childish-agency.com</a>
+      </section>
+    </div>
   </main>
 
   <footer class="site-foot">
     <div class="wrap">
+      <span class="wordmark" aria-hidden="true">Childish</span>
       <p>© 2026 Childish Agency, Monaco</p>
       <nav aria-label="Informations légales">
         <a href="mentions-legales.html">Mentions légales</a>
